@@ -1,0 +1,35 @@
+.home {
+    padding: 5vh;
+}
+
+.home .about .author {
+    margin-bottom: 0;
+    font-size: 4em;
+}
+
+.home .about .author .profile {
+    width: 2em;
+    height: 2em;
+    border-radius: 100%;
+    padding: 5px;
+    background-color: #ffb6c1;
+}
+
+.home .about .nickname {
+    font-size: 2.5em;
+    margin-top: 0;
+    color: #ffb6c1;
+}
+
+.home .about .detail {
+    font-size: 2em;
+    width: 20em;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    margin: 0;
+}
