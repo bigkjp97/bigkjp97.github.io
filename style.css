@@ -1,10 +1,15 @@
 .home {
-    padding: 5vh;
+    padding-left: 5vh;
 }
 
 .home .about .author {
     margin-bottom: 0;
+    margin-right: 0;
     font-size: 4em;
+}
+
+.home .about .author .digits {
+    color: #ffb6c1;
 }
 
 .home .about .author .profile {
@@ -22,8 +27,8 @@
 }
 
 .home .about .detail {
-    font-size: 2em;
-    width: 20em;
+    font-size: 1.8em;
+    width: 10em;
 }
 
 a {
