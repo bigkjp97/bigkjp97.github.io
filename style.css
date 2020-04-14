@@ -36,6 +36,7 @@
 }
 
 .home .about .nickname .light {
+    border-radius: 100%;
     transition-duration: .3s;
     animation-duration: 5s;
     animation-iteration-count: infinite;
@@ -85,7 +86,7 @@ img {
     }
 
     50% {
-        box-shadow: 0 0 24px rgba(255, 105, 180, 0.8);
+        box-shadow: 0 0 32px rgba(255, 105, 180, 1);
     }
 
     100% {
