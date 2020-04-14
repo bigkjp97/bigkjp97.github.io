@@ -1,15 +1,17 @@
 .home {
     padding-left: 2vh;
+    background-color: #2c2c2c;
 }
 
 .home .about .author {
     margin-bottom: 0;
     margin-right: 0;
     font-size: 4em;
+    color: #fff5ee;
 }
 
 .home .about .author .digits {
-    color: #ffb6c1;
+    color: #ffc0cb;
 }
 
 .home .about .author .profile {
@@ -17,32 +19,33 @@
     height: 2em;
     border-radius: 100%;
     padding: 5px;
-    background-color: #ffb6c1;
+    background-color: #ffc0cb;
 }
 
 .home .about .nickname {
     font-size: 2.5em;
     margin-top: 0;
     margin-bottom: 0;
-    color: #ffb6c1;
+    color: #ffc0cb;
+}
+
+.home .about .nickname .light {
+    visibility: hidden;
 }
 
 .home .about .nickname .dark {
-    visibility: hidden;
+    visibility: initial;
 }
 
 .home .about .detail {
     font-size: 1.5em;
     max-width: 28em;
-}
-
-.home .about .detail .spring {
-    color: #00FF7F;
+    color: #fff5ee;
 }
 
 a {
     text-decoration: none;
-    color: #121314;
+    color: #f8f8ff;
     position: relative;
 }
 

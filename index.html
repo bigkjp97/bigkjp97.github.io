@@ -13,8 +13,8 @@
     />
     <title>KJP&#39;s Page</title>
     <link rel="shortcut icon" href="./assets/githubpage.svg" />
-    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" title="bright" />
+    <link rel="alternate stylesheet" href="dark.css" title="dark" />
   </head>
   <body class="home">
     <main class="about">
@@ -22,11 +22,14 @@
         BigKJP<b class="digits">97</b>
         <img class="profile" src="./assets/profile.svg" alt="profile" />
       </h1>
-      <h2 class="nickname">Rrrrrrrr</h2>
+      <h2 class="nickname">
+        Rrrrrrrr
+        <img class="light" src="./assets/lighton.svg" onclick="lightOff()" />
+        <img class="dark" src="./assets/lightoff.svg" onclick="lightOn()" />
+      </h2>
       <p class="detail">
         Hello world! It's just a temporary page as I am figuring out VuePress
-        lol
-        <img src="./assets/lol.svg" alt="lol" />.
+        lol<img src="./assets/lol.svg" alt="lol" />.
       </p>
       <p class="detail">
         The open source will be uploaded to my
@@ -42,9 +45,38 @@
         development, it's just for my interest and ofc a big fan of<img
           src="./assets/vue.svg"
           alt="vuejs"
-        />. Now I'm focusing on<img src="./assets/spring.svg" alt="spring" />
+        />. Now I'm focusing on Spring<img
+          src="./assets/spring.svg"
+          alt="spring"
+        />
         'family-bucket'.
       </p>
     </main>
   </body>
+  <script>
+    function getCookie(cookie_name) {
+      var allcookies = document.cookie;
+
+      var cookie_pos = allcookies.indexOf(cookie_name);
+
+      if (cookie_pos != -1) {
+        cookie_pos = cookie_pos + cookie_name.length + 1;
+        var cookie_end = allcookies.indexOf(";", cookie_pos);
+        if (cookie_end == -1) {
+          cookie_end = allcookies.length;
+        }
+        var value = unescape(allcookies.substring(cookie_pos, cookie_end));
+      }
+      return value;
+    }
+    function lightOff() {
+      document.querySelector('link[title="dark"]').disabled = true;
+      document.querySelector('link[title="dark"]').disabled = false;
+      console.log("夜间模式开启");
+    }
+    function lightOn() {
+      document.querySelector('link[title="dark"]').disabled = true;
+      console.log("夜间模式关闭");
+    }
+  </script>
 </html>
