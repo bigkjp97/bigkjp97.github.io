@@ -18,6 +18,10 @@
     border-radius: 100%;
     padding: 5px;
     background-color: #ffb6c1;
+    transition-duration: .3s;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-name: glowing-primary;
 }
 
 .home .about .nickname {
@@ -28,7 +32,15 @@
 }
 
 .home .about .nickname .dark {
-    visibility: hidden;
+    display: none;
+}
+
+.home .about .nickname .light {
+    transition-duration: .3s;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-name: light-on;
+    border: 0em;
 }
 
 .home .about .detail {
@@ -65,4 +77,34 @@ a:hover:after {
 
 img {
     margin: 0;
+}
+
+@keyframes glowing-primary {
+    0% {
+        box-shadow: 0 0 0 rgba(255, 105, 180, 0.3);
+    }
+
+    50% {
+        box-shadow: 0 0 24px rgba(255, 105, 180, 0.8);
+    }
+
+    100% {
+        box-shadow: 0 0 0 rgba(255, 105, 180, 0.3);
+    }
+
+}
+
+@keyframes light-on {
+    0% {
+        box-shadow: 0 0 0 rgba(244, 234, 42, 0.3);
+    }
+
+    50% {
+        box-shadow: 0 0 24px rgba(244, 234, 42, 0.8);
+    }
+
+    100% {
+        box-shadow: 0 0 0 rgba(244, 234, 42, 0.3);
+    }
+
 }
