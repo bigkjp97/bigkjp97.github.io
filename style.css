@@ -13,15 +13,15 @@
 }
 
 .home .about .author .profile {
-    width: 2em;
-    height: 2em;
+    /* width: 2em;
+height: 2em; */
     border-radius: 100%;
     padding: 5px;
     background-color: #ffb6c1;
-    /* transition-duration: .3s;
-animation-duration: 5s;
-animation-iteration-count: infinite;
-animation-name: glowing-primary; */
+    transition-duration: .3s;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-name: glowing-primary;
 }
 
 .home .about .nickname {
