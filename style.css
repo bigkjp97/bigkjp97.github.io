@@ -38,7 +38,7 @@
 .home .about .detail .light {
     border-radius: 100%;
     transition-duration: .3s;
-    animation-duration: 5s;
+    animation-duration: 1.5s;
     animation-iteration-count: infinite;
     animation-name: light-on;
     border: 0em;
