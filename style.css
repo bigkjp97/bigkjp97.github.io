@@ -31,11 +31,11 @@
     color: #ffb6c1;
 }
 
-.home .about .nickname .dark {
+.home .about .detail .dark {
     display: none;
 }
 
-.home .about .nickname .light {
+.home .about .detail .light {
     border-radius: 100%;
     transition-duration: .3s;
     animation-duration: 5s;

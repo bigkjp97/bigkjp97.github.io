@@ -29,11 +29,11 @@
     color: #ffc0cb;
 }
 
-.home .about .nickname .light {
+.home .about .detail .light {
     display: none;
 }
 
-.home .about .nickname .dark {
+.home .about .detail .dark {
     display: inline-block;
 }
 
