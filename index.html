@@ -1,83 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"
     />
-    <meta charset="utf-8" />
-    <meta name="author" content="BigKJP" />
+    <meta charset="utf-8"/>
+    <meta name="author" content="BigKJP"/>
     <meta
-      name="description"
-      content="Temporary page while figuring out vuepress"
+            name="description"
+            content="Temporary page while figuring out vuepress"
     />
     <title>KJP&#39;s Page</title>
-    <link rel="shortcut icon" href="./assets/githubpage.svg" />
-    <link rel="stylesheet" href="style.css" title="bright" />
-    <link rel="alternate stylesheet" href="dark.css" title="dark" />
-  </head>
-  <body class="home">
-    <main class="about">
-      <h1 class="author">
+    <link rel="shortcut icon" href="./assets/githubpage.svg"/>
+    <link rel="stylesheet" href="style.css" title="bright"/>
+    <link rel="alternate stylesheet" href="dark.css" title="dark"/>
+</head>
+<body class="home">
+<main class="about">
+    <h1 class="author">
         BigKJP<b class="digits">97</b>
-        <img class="profile" src="./assets/profile.svg" alt="profile" />
-      </h1>
-      <h2 class="nickname">
-        Rrrrrrrr
-      </h2>
-      <p class="detail">
-        Hello world! It's just my simple page here🤣 and...ofc u can turn
-        off<img src="./assets/point.svg" alt="point" />the
-        <img class="light" src="./assets/lighton.svg" onclick="lightOff()" />
-        <img class="dark" src="./assets/lightoff.svg" onclick="lightOn()" /> to
-        save ur eyes(I make a darkmode here😝).
-      </p>
-      <p class="detail">
+        <img class="profile" src="./assets/profile.svg" alt="profile"/>
+    </h1>
+    <h2 class="nickname">
+        Rrrrrrrr<img src="./assets/smile.svg" alt="smile">
+    </h2>
+    <p class="detail">
+        Hello world! It's just my lil try on front-end🤣 u can click here
+        <img class="light" src="./assets/lighton.svg" onclick="lightOff()"/>
+        <img class="dark" src="./assets/lightoff.svg" onclick="lightOn()"/> (I make a darkmode here😝).
+    </p>
+    <p class="detail">
         The open source will be uploaded to my
         <a href="https://github.com/bigkjp97/" target="_blank">Github</a>, u can
-        also contact me<img src="./assets/at.svg" />my
+        also contact me<img src="./assets/at.svg"/>my
         <a href="https://www.instagram.com/bigkjp97/" target="_blank">ins</a>
         and my
         <a href="https://twitter.com/bigkjp97/" target="_blank">twitter</a
-        >(Though there's nothing yet).
-      </p>
-      <p class="detail">
-        I'm a rookie<img src="./assets/rookie.svg" alt="rookie" /> in front-end
-        development, it's just for my interest and ofc a big fan of<img
-          src="./assets/vue.svg"
-          alt="vuejs"
-        />. Now I'm focusing on Spring<img
-          src="./assets/spring.svg"
-          alt="spring"
-        />
-        'family-bucket'.
-      </p>
-    </main>
-  </body>
-  <script>
+        >(Though i may only push my game play:=).
+    </p>
+    <p class="detail">
+        <img src="./assets/lol.svg" alt="lol">
+    </p>
+</main>
+</body>
+<script>
     function getCookie(cookie_name) {
-      var allcookies = document.cookie;
+        var allcookies = document.cookie;
 
-      var cookie_pos = allcookies.indexOf(cookie_name);
+        var cookie_pos = allcookies.indexOf(cookie_name);
 
-      if (cookie_pos != -1) {
-        cookie_pos = cookie_pos + cookie_name.length + 1;
-        var cookie_end = allcookies.indexOf(";", cookie_pos);
-        if (cookie_end == -1) {
-          cookie_end = allcookies.length;
+        if (cookie_pos != -1) {
+            cookie_pos = cookie_pos + cookie_name.length + 1;
+            var cookie_end = allcookies.indexOf(";", cookie_pos);
+            if (cookie_end == -1) {
+                cookie_end = allcookies.length;
+            }
+            var value = unescape(allcookies.substring(cookie_pos, cookie_end));
         }
-        var value = unescape(allcookies.substring(cookie_pos, cookie_end));
-      }
-      return value;
+        return value;
     }
+
     function lightOff() {
-      document.querySelector('link[title="dark"]').disabled = true;
-      document.querySelector('link[title="dark"]').disabled = false;
-      console.log("夜间模式开启");
+        document.querySelector('link[title="dark"]').disabled = true;
+        document.querySelector('link[title="dark"]').disabled = false;
+        console.log("夜间模式开启");
     }
+
     function lightOn() {
-      document.querySelector('link[title="dark"]').disabled = true;
-      console.log("夜间模式关闭");
+        document.querySelector('link[title="dark"]').disabled = true;
+        console.log("夜间模式关闭");
     }
-  </script>
+</script>
 </html>
